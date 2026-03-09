@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html"><strong>Sistema Universidad</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarAliados" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aliados
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarAliados">
+                            <li><a class="dropdown-item" href="form_aliado.html">Nuevo Aliado</a></li>
+                            <li><a class="dropdown-item" href="/aliados">Listado de Aliados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarRedes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Redes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarRedes">
+                            <li><a class="dropdown-item" href="form_red.html">Nueva Red</a></li>
+                            <li><a class="dropdown-item" href="/redes">Listado de Redes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Gestión Profesoral</h1>
+                <p>El módulo de Gestión Profesoral permite registrar, organizar y analizar la información relacionada con la participación de los docentes en redes académicas y programas de becas, facilitando la centralización de estos datos dentro del Sistema de Información institucional.
+
+Este módulo permite a la universidad hacer seguimiento al desarrollo académico y científico de sus profesores, identificar oportunidades de cooperación y medir el impacto de las becas y redes en la generación de conocimiento.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Contáctanos &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Red</h2>
+                    <p>Servicio que permite registrar la participación de los docentes en redes académicas o de investigación, ya sean nacionales o internacionales. Esto ayuda a identificar oportunidades de colaboración, intercambio de conocimiento y fortalecimiento de la investigación.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Solicitar red &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Beca</h2>
+                    <p>Servicio que permite registrar y gestionar la información relacionada con las becas otorgadas a los docentes, incluyendo datos como tipo de beca, entidad que la otorga, duración y beneficios. Esto facilita el seguimiento al apoyo académico y al desarrollo profesional de los profesores.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Soliciar beca &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Aliado</h2>
+                    <p>Hace referencia a las instituciones, organizaciones o entidades externas que colaboran con la universidad en actividades académicas, investigativas o de formación. Este servicio permite registrar y gestionar la información de estos aliados estratégicos.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Solicitar aliado &raquo;</a></p>
+                </div>
+            </div>
+            <div class="card-group">
+  <div class="card">
+    <img src="https://www.elemprendedor.pe/media/2021/02/tramite-cofopri.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Inscripciones abiertas</h5>
+      <p class="card-text">La inscripción a través de la página web fue muy fácil y rápida. Pude completar todo el proceso en línea sin complicaciones y recibir la información necesaria de manera clara.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.abogadosdefamiliacolombia.com/abogado/imagenes/C%C3%B3mo%20solicitar%20cuota%20alimentaria%20si%20ya%20cumpl%C3%AD%2018%20a%C3%B1os%20y%20sigo%20estudiando.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Comienza hoy mismo</h5>
+      <p class="card-text">Gracias a la beca pude continuar mis estudios y enfocarme en mi formación académica sin preocuparme tanto por los costos. Esta oportunidad no solo me permitió seguir aprendiendo, sino también acercarme a nuevas redes académicas que han fortalecido mi desarrollo profesional.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://thumbs.dreamstime.com/b/retrato-profesional-sonriente-del-equipo-grupo-de-los-l%C3%ADderes-empresariales-y-empleados-mentores-profesionales-sonrientes-que-141681202.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Nuestro equipo</h5>
+      <p class="card-text">El sistema facilita mucho el registro de información sobre redes académicas y proyectos. Ahora es más fácil hacer seguimiento a las actividades investigativas.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
+
+            <hr>
+
+        </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+        <h3>Luna Serna Vargas</h3>
+        <p>&copy; Company 2017-2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="/docs/4.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

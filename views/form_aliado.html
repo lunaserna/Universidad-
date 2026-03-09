@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html"><strong>Sistema Universidad</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarAliados" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aliados
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarAliados">
+                            <li><a class="dropdown-item active" href="form_aliado.html">Nuevo Aliado</a></li>
+                            <li><a class="dropdown-item" href="/aliados">Listado de Aliados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarRedes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Redes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarRedes">
+                            <li><a class="dropdown-item" href="form_red.html">Nueva Red</a></li>
+                            <li><a class="dropdown-item" href="/redes">Listado de Redes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container  mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="mb-4">Registrar Nuevo Aliado</h1>
+                <form action="/aliados/crear" method="post" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nit" class="form-label">NIT</label>
+                        <input type="number" class="form-control" id="nit" name="nit" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="razon_social" class="form-label">Razón Social</label>
+                        <input type="text" class="form-control" id="razon_social" name="razon_social" maxlength="60"
+                            required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nombre_contacto" class="form-label">Nombre de Contacto</label>
+                        <input type="text" class="form-control" id="nombre_contacto" name="nombre_contacto"
+                            maxlength="60" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" name="correo" maxlength="70" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono" maxlength="45" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ciudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="ciudad" name="ciudad" maxlength="45" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Registrar Aliado</button>
+                        <a href="/aliados" class="btn btn-secondary">Ver Listado</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
